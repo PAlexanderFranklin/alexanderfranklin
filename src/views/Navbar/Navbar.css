@@ -3,7 +3,7 @@
 }
 
 .Navbar {
-    background-color: rgb(122, 122, 122);
+    background-color: white;
     position: fixed;
     width: 100%;
     top: 0;
@@ -13,7 +13,7 @@
 .Navbar a {
     font-size: 1.5em;
     text-decoration: none;
-    color: white;
+    color: #616161;
 }
 
 .Navbar ul {

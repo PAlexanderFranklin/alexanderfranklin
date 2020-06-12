@@ -7,14 +7,14 @@
     height: 100%;
     width: 100%;
     padding-right: 1em;
-    outline: black solid 2px;
-    background: linear-gradient(grey, #303030);
+    outline: darkgrey solid 2px;
+    background: linear-gradient(white, lightgrey);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .Tab .active {
-    color: gold;
-    background: linear-gradient(#303030, grey);
+    color: black;
+    background: linear-gradient(lightgrey, white);
 }
