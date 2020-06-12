@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Navbar/Navbar'
 import Home from './Pages/Home/Home'
 import Resume from './Pages/Resume/Resume'
+import Projects from './Pages/Projects/Projects'
 import Contact from './Pages/Contact/Contact'
 import {Route} from 'react-router-dom'
 
@@ -13,6 +14,7 @@ function App() {
       <div className="content">
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
+        <Route path="/projects" component={Projects} />
         <Route path="/contact" component={Contact} />
       </div>
     </div>
