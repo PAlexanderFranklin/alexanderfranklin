@@ -4,7 +4,7 @@ import './Projects.css';
 function Projects() {
   return (
     <div className="Projects">
-      <a href="https://github.com/PAlexanderFranklin">GitHub</a>
+      I have things on my <a href="https://github.com/PAlexanderFranklin">GitHub</a>
     </div>
   );
 }
