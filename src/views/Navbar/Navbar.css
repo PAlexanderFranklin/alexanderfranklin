@@ -1,0 +1,28 @@
+.header {
+    height: 10rem;
+}
+
+.Navbar {
+    background-color: rgb(122, 122, 122);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.Navbar a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.Navbar ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
