@@ -5,7 +5,9 @@ function Project(props) {
   return (
     <div className={"Project " + props.className}>
       <h1>{props.title}</h1>
-      {props.children}
+      <div className="project_body">
+        {props.children}
+      </div>
     </div>
   );
 }

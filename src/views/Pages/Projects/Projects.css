@@ -1,8 +1,22 @@
-.left {
-    margin-left: 10%;
+.Project {
+    padding: 1em 2em 1em 2em;
+    margin-bottom: 2rem;
+    background-color: white;
+    width: 26rem;
 }
+  
 
-.right {
-    margin-right: 10%;
-    float: right;
+@media (min-width: 35rem) {
+    .left {
+        margin-left: 10%;
+    }
+
+    .right {
+        margin-right: 10%;
+        float: right;
+    }
+    
+    .wide {
+      width: 30rem;
+    }
 }
