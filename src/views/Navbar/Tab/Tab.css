@@ -3,6 +3,12 @@
     height: 5rem;
 }
 
+@media (max-width: 35rem) {
+    .Tab {
+        height: 2.5rem;
+    }
+}
+
 .Tab a {
     height: 100%;
     width: 100%;
