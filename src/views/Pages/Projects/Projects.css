@@ -2,7 +2,9 @@
     padding: 1em 2em 1em 2em;
     margin-bottom: 2rem;
     background-color: white;
-    width: 26rem;
+    --project-width: 26rem;
+    --wide-width: 30rem;
+    width: var(--project-width);
 }
   
 
@@ -10,13 +12,12 @@
     .left {
         margin-left: 10%;
     }
-
-    .right {
-        margin-right: 10%;
-        float: right;
-    }
     
     .wide {
-      width: 30rem;
+        width: var(--wide-width);
+    }
+
+    .right {
+        margin-left: calc(88% - var(--wide-width));
     }
 }

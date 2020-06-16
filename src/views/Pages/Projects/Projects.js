@@ -8,7 +8,6 @@ function Projects() {
       <Project className="left" title="alexanderfranklin.net">
         This is the website you are on. It was
         built using react, and it is hosted on AWS.
-        I took the background photo myself.
       </Project>
       <Project className="right wide" title="Gravity Rotation Simulator">
         I made this using scratch, a visual block language. It uses its own coordinate system,
@@ -26,6 +25,9 @@ function Projects() {
           scrolling="no" 
           allowfullscreen>
         </iframe>
+      </Project>
+      <Project className="left" title="This demonstrates state.">
+        not yet.
       </Project>
     </div>
   );
