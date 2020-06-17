@@ -1,12 +1,18 @@
 .App {
     text-align: center;
+    --background-color: white;
   }
+
+.dark_mode {
+  --background-color: #171717;
+  color: white;
+}
 
 .content {
   display: inline-block;
   padding: 1em 2em 1em 2em;
   margin-top: 2rem;
   margin-bottom: 5rem;
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 2em;
 }
