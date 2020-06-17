@@ -1,0 +1,9 @@
+.dark_mode_toggle {
+    display: block;
+    margin-left: 5rem;
+    background-color: var(--background-color);
+    color: var(--color);
+    outline: none;
+    border: none;
+    border-radius: 2em;
+}
