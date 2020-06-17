@@ -27,7 +27,11 @@ function Projects() {
     <Project className="left" title="alexanderfranklin.net">
       This is the website you are on. It was
       built using react, and it is hosted on AWS.
-      The following demonstrates React state managment.
+      I use react router to combine the performance of single page applications
+      with the UI of multi page applications.
+      I use the useState react hook as well as 
+      css variables for the sitewide dark mode button.
+      The following also demonstrates state management.
       <div className="bar_display">
         <button onClick={() => setBars(bars - 1)} className="arrow_button"><h1>{'<'}</h1></button>
         {barArray /*bar display */}
