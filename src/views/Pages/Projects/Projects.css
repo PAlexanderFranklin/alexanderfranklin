@@ -21,3 +21,27 @@
         margin-left: calc(88% - var(--wide-width));
     }
 }
+
+.bar_display {
+    text-align: center;
+}
+
+.bar {
+    background-color: darkgrey;
+    outline: none;
+    margin-right: 0.1em;
+    margin-left: 0.1em;
+}
+
+.active_bar {
+    background-color: limegreen;
+}
+
+.arrow_button {
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    margin-right: 1em;
+    margin-left: 1em;
+    vertical-align: top;
+}
