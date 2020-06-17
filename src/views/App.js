@@ -15,7 +15,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
         <Route path="/projects" render={ () => <div>
-          I have some projects on my <a href="https://github.com/PAlexanderFranklin">GitHub</a>
+          Here is my <a href="https://github.com/PAlexanderFranklin">GitHub</a>
         </div>} />
         <Route path="/contact" component={Contact} />
       </div>
