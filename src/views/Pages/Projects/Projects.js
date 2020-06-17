@@ -5,13 +5,7 @@ import Project from './Project/Project'
 function Projects() {
   let projectArray = [];
 
-  projectArray.push(
-    <Project className="left" title="alexanderfranklin.net">
-      This is the website you are on. It was
-      built using react, and it is hosted on AWS.
-    </Project>
-  );
-
+  //This builds the bar display
   const [bars, setBars] = useState(1);
   if (bars < 0) {
     setBars(0);
@@ -27,18 +21,24 @@ function Projects() {
     }
     barArray.push(<button onClick={() => setBars(i)} className={"bar " + active} style={{height: i + "em"}} />)
   }
+  //End of bar display builder
+
   projectArray.push(
-    <Project className="right" title="This demonstrates state.">
+    <Project className="left" title="alexanderfranklin.net">
+      This is the website you are on. It was
+      built using react, and it is hosted on AWS.
+      The following demonstrates React state managment.
       <div className="bar_display">
         <button onClick={() => setBars(bars - 1)} className="arrow_button"><h1>{'<'}</h1></button>
-        {barArray}
+        {barArray /*bar display */}
         <button onClick={() => setBars(bars + 1)} className="arrow_button"><h1>{'>'}</h1></button>
       </div>
     </Project>
   );
 
+
   projectArray.push(
-    <Project className="left wide" title="Gravity Rotation Simulator">
+    <Project className="right wide" title="Gravity Rotation Simulator">
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
       basic air resistence. It also has basic collision detection. <hr/>

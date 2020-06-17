@@ -24,6 +24,7 @@
 
 .bar_display {
     text-align: center;
+    margin-top: 2rem;
 }
 
 .bar {
@@ -39,9 +40,19 @@
 
 .arrow_button {
     background-color: whitesmoke;
-    border: none;
+    border: lightgrey solid 1px;
     outline: none;
     margin-right: 1em;
     margin-left: 1em;
     vertical-align: top;
+    transition: all 0.15s;
+}
+
+.arrow_button:hover {
+    background-color: lightgrey;
+    border-color: grey;
+}
+.arrow_button:active {
+    background-color: grey;
+    border-color: black;
 }
