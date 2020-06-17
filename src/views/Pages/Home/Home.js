@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -7,11 +8,14 @@ function Home() {
       <h1>My name is Alexander Franklin.</h1>
       <p>
         I am a web developer, which means I create websites like this. <br/>
-        Really though, it means I spend lot of time googling things.
+        It also means I google things a lot.
       </p>
       <p>
         I don't just build websites. I like to code no matter the medium, <br/>
         be it Python, or a visual language like scratch, or even a video game.
+      </p>
+      <p>
+        Read more about this website on the <Link to="/projects">projects</Link> page.
       </p>
     </div>
   );
