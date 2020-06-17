@@ -9,7 +9,7 @@ import Contact from './Pages/Contact/Contact'
 import {Route} from 'react-router-dom'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(0);
+  const [darkMode, setDarkMode] = useState(false);
   let appClass = "";
   if (darkMode) {
     appClass = "dark_mode";

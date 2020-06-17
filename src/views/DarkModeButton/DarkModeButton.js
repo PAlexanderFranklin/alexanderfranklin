@@ -7,11 +7,11 @@ function DarkModeButton(props) {
     <button className="dark_mode_toggle" 
     onClick={
       () => {
-        if(darkMode === 1) {
-          setDarkMode(0);
+        if(darkMode) {
+          setDarkMode(false);
         }
         else {
-          setDarkMode(1);
+          setDarkMode(true);
         }
       }
     }>
