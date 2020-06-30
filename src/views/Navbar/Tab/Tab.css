@@ -12,6 +12,5 @@
 }
 
 .Tab .active {
-    color: black;
     background: rgba(189, 158, 196, 0.3);
 }

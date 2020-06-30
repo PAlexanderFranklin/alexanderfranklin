@@ -1,9 +1,12 @@
 .dark_mode_toggle {
     display: inline-block;
-    padding: 1em 2em;
+    position: fixed;
+    left: 3rem;
+    padding: 0.70em 1.2em;
     outline: none;
     border: none;
-    border-radius: 1em;
+    border-radius: 0.4em;
+    font-size: 1.25em;
     font-weight: 500;
     color: var(--color);
     background: #F5E4F5;

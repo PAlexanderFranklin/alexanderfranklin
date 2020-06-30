@@ -4,9 +4,9 @@ import './Home.css';
 
 function Home() {
   return (
-    <div>
+    <div className="content">
       <div className="Home bubble">
-        <h1>My name is Alexander Franklin.</h1>
+        <h2>My name is Alexander Franklin.</h2>
         <p>
           I am a web developer, which means I create websites like this. <br/>
           It also means I google things a lot.
@@ -20,7 +20,7 @@ function Home() {
         </p>
       </div>
       <div className="Contact bubble">
-        <h1>How to contact me</h1>
+        <h2>How to contact me</h2>
         <p>
           <b>Email:</b> PAlexanderFranklin@gmail.com <br />
           <b>Phone:</b> 509-930-9363

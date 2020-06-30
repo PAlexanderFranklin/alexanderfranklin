@@ -11,11 +11,15 @@
     left: 0;
 }
 
+.dark_mode .Navbar {
+    background-color: #222222;
+}
+
 .Navbar a {
     font-size: 2em;
     font-weight: 600;
     text-decoration: none;
-    color: black;
+    color: var(--color);
 }
 
 .Navbar ul {
