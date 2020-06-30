@@ -1,20 +1,11 @@
 .Tab {
     flex-grow: 1;
-    height: 5rem;
-}
-
-@media (max-width: 35rem) {
-    .Tab {
-        height: 2.5rem;
-    }
+    height: 4rem;
 }
 
 .Tab a {
     height: 100%;
     width: 100%;
-    padding-right: 1em;
-    outline: darkgrey solid 2px;
-    background: linear-gradient(white, lightgrey);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,5 +13,5 @@
 
 .Tab .active {
     color: black;
-    background: linear-gradient(lightgrey, white);
+    background: rgba(189, 158, 196, 0.3);
 }

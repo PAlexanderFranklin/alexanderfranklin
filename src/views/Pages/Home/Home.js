@@ -4,7 +4,7 @@ import './Home.css';
 
 function Home() {
   return (
-    <div className="content">
+    <div>
       <div className="Home bubble">
         <h1>My name is Alexander Franklin.</h1>
         <p>
@@ -16,7 +16,7 @@ function Home() {
           be it Python, or a visual language like scratch, or even a video game.
         </p>
         <p>
-          Read more about this website on the <Link to="/projects">projects</Link> page.
+          Read more about this website on the projects page.
         </p>
       </div>
       <div className="Contact bubble">
