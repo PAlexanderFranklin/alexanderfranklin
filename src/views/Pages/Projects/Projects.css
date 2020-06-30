@@ -2,12 +2,13 @@
     padding: 1em 2em 1em 2em;
     margin-bottom: 2rem;
     background-color: var(--background-color);
-    --project-width: 26rem;
-    --wide-width: 30rem;
-    width: var(--project-width);
 }
 
 .git_button {
+    padding: 1em 0em;
+    font-size: 2em;
+    background: var(--button_highlight);
+    border-radius: 0.1em;
 }
 
 .bar_display {

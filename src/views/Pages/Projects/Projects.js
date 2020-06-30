@@ -42,7 +42,7 @@ function Projects() {
 
 
   projectArray.push(
-    <Project className="bubble wide" title="Gravity Rotation Simulator">
+    <Project className="bubble" title="Gravity Rotation Simulator">
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
       basic air resistence. It also has basic collision detection. <hr/>
@@ -63,7 +63,7 @@ function Projects() {
 
   return (
     <div className="Projects content">
-      <a className="bubble git_button" href="https://github.com/PAlexanderFranklin">Visit my GitHub</a>
+      <a className="bubble git_button" href="https://github.com/PAlexanderFranklin">VISIT MY GITHUB</a>
       {projectArray}
     </div>
   );
