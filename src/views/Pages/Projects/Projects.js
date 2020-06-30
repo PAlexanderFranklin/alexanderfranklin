@@ -62,8 +62,8 @@ function Projects() {
   );
 
   return (
-    <div className="Projects">
-      Here is my <a href="https://github.com/PAlexanderFranklin">GitHub</a>
+    <div className="Projects content">
+      <a className="bubble git_button" href="https://github.com/PAlexanderFranklin">Visit my GitHub</a>
       {projectArray}
     </div>
   );

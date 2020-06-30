@@ -6,20 +6,8 @@
     --wide-width: 30rem;
     width: var(--project-width);
 }
-  
 
-@media (min-width: 35rem) {
-    .left {
-        margin-left: 10%;
-    }
-    
-    .wide {
-        width: var(--wide-width);
-    }
-
-    .right {
-        margin-left: calc(88% - var(--wide-width));
-    }
+.git_button {
 }
 
 .bar_display {
