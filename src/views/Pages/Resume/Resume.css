@@ -1,5 +1,28 @@
 .Resume {
     text-align: left;
+    font-weight: 500;
+    font-size: 1.07em;
+    width: 51%;
+    padding: 0.2em 2.2em;
+}
+
+.Resume hr {
+    border: none;
+    height: 0.1em;
+    background: var(--color);
+}
+
+.Resume ul {
+    margin-top: 0em;
+}
+
+.Resume li {
+    font-size: 1.5em;
+    height: 0.8em;
+}
+
+.Resume li span{
+    font-size: 0.7em;
 }
 
 .date {
