@@ -15,6 +15,7 @@ function App() {
   }
   return (
     <div className={"App " + appClass}>
+      <div className="background_tint" />
       <Navbar />
       <DarkModeButton 
         darkMode={darkMode} 
