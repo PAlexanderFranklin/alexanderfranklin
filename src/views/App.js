@@ -5,7 +5,6 @@ import DarkModeButton from './DarkModeButton/DarkModeButton'
 import Home from './Pages/Home/Home'
 import Resume from './Pages/Resume/Resume'
 import Projects from './Pages/Projects/Projects'
-import Contact from './Pages/Contact/Contact'
 import {Route} from 'react-router-dom'
 
 function App() {
@@ -24,12 +23,8 @@ function App() {
       <div className="content">
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
-        <Route path="/projects" render={ () => <div>
-          Here is my <a href="https://github.com/PAlexanderFranklin">GitHub</a>
-        </div>} />
-        <Route path="/contact" component={Contact} />
+        <Route path="/projects" component={Projects} />
       </div>
-      <Route path="/projects" component={Projects} />
     </div>
   );
 }
