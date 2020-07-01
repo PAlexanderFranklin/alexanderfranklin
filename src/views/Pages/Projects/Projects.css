@@ -6,6 +6,13 @@
     background-color: var(--background-color);
 }
 
+@media (max-width: 35rem) {
+    .Project {
+        width: 80%;
+        padding: 1em;
+    }
+}
+
 .git_button {
     width: 42%;
     margin-bottom: 2em;
