@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="content">
       <div className="Home bubble">
-        <h2>My name is Alexander Franklin.</h2>
+        <h2>My name is Alexander Franklin</h2>
         <p>
           I am a web developer, which means I create websites like this. <br/>
           It also means I google things a lot.
