@@ -22,8 +22,8 @@ function Home() {
       <div className="Contact bubble">
         <h2>How to contact me</h2>
         <p>
-          <MdMailOutline /> PAlexanderFranklin@gmail.com <br />
-          <MdPhoneIphone /> 509-930-9363
+          <p><MdMailOutline className="icon"/> PAlexanderFranklin@gmail.com </p>
+          <MdPhoneIphone className="icon"/> 509-930-9363
         </p>
       </div>
     </div>

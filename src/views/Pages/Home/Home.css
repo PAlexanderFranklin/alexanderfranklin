@@ -11,3 +11,14 @@
 .Contact {
     text-align: left;
 }
+
+.icon {
+    vertical-align: middle;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    color: #856679;
+}
+
+.dark_mode .icon {
+    color: #FE95D5;
+}
