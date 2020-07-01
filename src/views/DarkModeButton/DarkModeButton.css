@@ -16,7 +16,7 @@
         0px 8px 10px rgba(0, 0, 0, 0.14);
 }
 
-@media (max-width: 35rem) {	
+@media (max-width: 70rem) {	
     .dark_mode_toggle {	
         position: relative;
         left: 0em;
