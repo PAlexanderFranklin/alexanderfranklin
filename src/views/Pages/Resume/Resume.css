@@ -6,6 +6,13 @@
     padding: 0.2em 2.2em;
 }
 
+@media (max-width: 60rem) {
+    .Resume {
+        width: 100%;
+        border-radius: 0em;
+    }
+}
+
 .Resume hr {
     border: none;
     height: 0.1em;

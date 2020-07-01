@@ -6,10 +6,9 @@
     background-color: var(--background-color);
 }
 
-@media (max-width: 35rem) {
+@media (max-width: 60rem) {
     .Project {
-        width: 80%;
-        padding: 1em;
+        width: 100%;
     }
 }
 
