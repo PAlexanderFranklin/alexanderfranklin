@@ -1,5 +1,6 @@
 .project_body {
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .project_body iframe {
