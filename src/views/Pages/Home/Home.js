@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { MdMailOutline, MdPhoneIphone } from "react-icons/md";
 
 function Home() {
   return (
@@ -21,8 +22,8 @@ function Home() {
       <div className="Contact bubble">
         <h2>How to contact me</h2>
         <p>
-          <b>Email:</b> PAlexanderFranklin@gmail.com <br />
-          <b>Phone:</b> 509-930-9363
+          <MdMailOutline /> PAlexanderFranklin@gmail.com <br />
+          <MdPhoneIphone /> 509-930-9363
         </p>
       </div>
     </div>
