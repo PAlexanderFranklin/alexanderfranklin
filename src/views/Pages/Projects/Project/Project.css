@@ -7,3 +7,95 @@
   align-self: center;
   margin-top: 2rem;
 }
+
+.git_button {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+    border-radius: 0.6rem;
+}
+
+.bar_display {
+    align-self: center;
+    height: 5em;
+    width: 12em;
+    text-align: center;
+    margin-top: 2rem;
+    background: var(--background-color);
+}
+
+.bar {
+    background-color: darkgrey;
+    outline: none;
+    margin: 0.5em 0.1em;
+}
+
+.active_bar {
+    background-color: limegreen;
+}
+
+.arrow_button {
+    background-color: whitesmoke;
+    border: lightgrey solid 1px;
+    outline: none;
+    margin-right: 1em;
+    margin-left: 1em;
+    vertical-align: 1.8em;
+    transition: all 0.15s;
+}
+
+.arrow_button:hover {
+    background-color: lightgrey;
+    border-color: grey;
+}
+.arrow_button:active {
+    background-color: grey;
+    border-color: black;
+}
+
+.git_button {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.2), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.14);
+    border-radius: 0.6rem;
+}
+
+.bar_display {
+    align-self: center;
+    height: 5em;
+    width: 12em;
+    text-align: center;
+    margin-top: 2rem;
+    background: var(--background-color);
+}
+
+.bar {
+    background-color: darkgrey;
+    outline: none;
+    margin: 0.5em 0.1em;
+}
+
+.active_bar {
+    background-color: limegreen;
+}
+
+.arrow_button {
+    background-color: whitesmoke;
+    border: lightgrey solid 1px;
+    outline: none;
+    margin-right: 1em;
+    margin-left: 1em;
+    vertical-align: 1.8em;
+    transition: all 0.15s;
+}
+
+.arrow_button:hover {
+    background-color: lightgrey;
+    border-color: grey;
+}
+.arrow_button:active {
+    background-color: grey;
+    border-color: black;
+}

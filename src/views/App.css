@@ -3,13 +3,11 @@
     --background-color: rgba(255, 255, 255, 0.9);
     --color: black;
     color: var(--color);
-    --button_highlight: #F5E4F5;
   }
 
 .dark_mode {
     --background-color: rgba(37, 37, 37, 0.9);
     --color: white;
-    --button_highlight: #856679;
 }
 
 .dark_mode .background_tint {
@@ -34,6 +32,15 @@
     margin-bottom: 2rem;
     background-color: var(--background-color);
     border-radius: 1.5rem;
+}
+
+.alex_button {
+    background-color: #F5E4F5;
+    color: var(--color);
+}
+
+.dark_mode .alex_button{
+    background-color: #856679;
 }
 
 @media (max-width: 60rem) {
