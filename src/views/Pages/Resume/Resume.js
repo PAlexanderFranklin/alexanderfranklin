@@ -27,7 +27,7 @@ function Resume() {
         <h2>Work Experience</h2>
         Harvest Homes <span className="date">Sep <span className="number">2018</span>-Present</span> <br/>
         <ul>
-          <li><span>Maintenance</span></li>
+          <li><span className="bullet_small">Maintenance</span></li>
         </ul>
       </div>
     </div>
