@@ -1,35 +1,43 @@
 .Resume {
     text-align: left;
     font-weight: 500;
-    font-size: 1.07em;
+    font-size: 1.18rem;
     width: 51%;
-    padding: 0.2em 2.2em;
+    padding: 1rem 3rem;
 }
 
 @media (max-width: 60rem) {
     .Resume {
-        width: 100%;
-        border-radius: 0em;
+        width: 95%;
+        border-radius: 0rem;
     }
+}
+
+.no_top_margin {
+    margin-top: 0rem;
+}
+
+.Resume h2 {
+    font-size: 2rem;
 }
 
 .Resume hr {
     border: none;
-    height: 0.1em;
+    height: 0.1rem;
     background: var(--color);
 }
 
 .Resume ul {
-    margin-top: 0em;
+    margin-top: 0rem;
 }
 
 .Resume li {
-    font-size: 1.5em;
-    height: 0.8em;
+    font-size: 1.7rem;
+    height: 1.5rem;
 }
 
 .Resume li .bullet_small{
-    font-size: 0.7em;
+    font-size: 1.25rem;
 }
 
 .date {

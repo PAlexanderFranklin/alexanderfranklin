@@ -5,7 +5,7 @@ function Resume() {
   return (
     <div className="Resume bubble">
       <div>
-        <h2>Technical Skills</h2>
+        <h2 className="no_top_margin">Technical Skills</h2>
         Languages: Javascript, HTML<span className="number">5</span>, CSS, Python, Applescript, C++. <br/>
         Frameworks and Technologies: React, Redux, Git Version Control, AWS(Amplify), Node.js
       </div>
@@ -18,7 +18,7 @@ function Resume() {
           <li><span className="bullet_small"><span className="number">94</span>th percentile</span></li>
         </ul>
         <hr/>
-        High School Diploma <span className="date">Apr <span className="number">2020</span></span>
+        High School Diploma <span className="date">April <span className="number">2020</span></span>
         <ul>
           <li><span className="bullet_small">Homeschool</span></li>
         </ul>

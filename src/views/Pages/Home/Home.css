@@ -1,15 +1,17 @@
 .Home {
     text-align: left;
+    font-size: 1.2rem;
 }
 
 .Home h2 {
     font-weight: 500;
-    font-size: 1.75em;
-    margin-top: 0.3em;
+    font-size: 2.12rem;
+    margin-top: 0.7rem;
 }
 
 .Contact {
     text-align: left;
+    font-size: 1.3rem;
 }
 
 .icon {

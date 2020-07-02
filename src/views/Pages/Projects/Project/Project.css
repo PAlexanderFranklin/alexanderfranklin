@@ -4,6 +4,6 @@
 }
 
 .project_body iframe {
-  max-width: 100%;
+  align-self: center;
   margin-top: 2rem;
 }
