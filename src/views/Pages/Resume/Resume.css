@@ -28,7 +28,7 @@
     height: 0.8em;
 }
 
-.Resume li span{
+.Resume li .bullet_small{
     font-size: 0.7em;
 }
 
