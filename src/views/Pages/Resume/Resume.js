@@ -6,7 +6,7 @@ function Resume() {
     <div className="Resume bubble">
       <div>
         <h2>Technical Skills</h2>
-        Languages: Javascript, HTML5, CSS, Python, Applescript. <br/>
+        Languages: Javascript, HTML5, CSS, Python, Applescript, C++. <br/>
         Frameworks and Technologies: React, Redux, Git Version Control, AWS(Amplify), Node.js
       </div>
       <div>
