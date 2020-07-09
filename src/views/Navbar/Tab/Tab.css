@@ -14,3 +14,7 @@
 .Tab .active {
     background: rgba(189, 158, 196, 0.3);
 }
+
+.Tab:active {
+    background: rgba(189, 158, 196, 0.2);
+}
