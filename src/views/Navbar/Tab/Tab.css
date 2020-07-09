@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.Tab a:hover {
+    text-decoration: underline;
+}
+
 .Tab .active {
     background: rgba(189, 158, 196, 0.3);
 }
