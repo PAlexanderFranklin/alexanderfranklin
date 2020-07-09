@@ -45,7 +45,7 @@ function Projects() {
     <Project className="bubble" title="Gravity Rotation Simulator">
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
-      basic air resistence. It also has basic collision detection. <hr/>
+      basic air resistance. It also has basic collision detection. <hr/>
       Press the green flag to start. The map takes some time to load. <br/>
       WAD to move and jump <br/>
       QSE to rotate/flip gravity <br/>
