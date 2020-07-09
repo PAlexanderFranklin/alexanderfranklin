@@ -14,7 +14,8 @@ function DarkModeButton(props) {
           setDarkMode(true);
         }
       }
-    }>
+    }
+    draggable="false">
       Toggle Dark Mode
     </button>
   );
