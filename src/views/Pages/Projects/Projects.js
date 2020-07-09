@@ -25,11 +25,11 @@ function Projects() {
 
   projectArray.push(
     <Project className="bubble" title="alexanderfranklin.net">
-      This is the website you are on. It was
+      The website you are on was
       built using react, and it is hosted on AWS.
       I use react router to combine the performance of single page applications
-      with the UI of multi page applications.
-      I use the useState react hook as well as 
+      with the UI of multi page applications,
+      the useState react hook as well as 
       css variables for the sitewide dark mode button.
       The following also demonstrates state management.
       <div className="bar_display">
