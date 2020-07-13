@@ -3,11 +3,6 @@
   flex-direction: column;
 }
 
-.project_body iframe {
-  align-self: center;
-  margin-top: 2rem;
-}
-
 .git_button {
     text-align: center;
     font-size: 1.5rem;
@@ -89,4 +84,14 @@
 .arrow_button:active {
     background-color: grey;
     border-color: black;
+}
+
+.scratch {
+    align-self: center;
+    text-align: center;
+    padding: 1rem;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
