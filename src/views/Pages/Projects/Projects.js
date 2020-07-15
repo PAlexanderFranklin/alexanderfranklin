@@ -46,7 +46,12 @@ function Projects() {
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
       basic air resistance. It also has basic collision detection. <hr/>
-      <a className="alex_button scratch" href="https://scratch.mit.edu/projects/212668429/">Click here to go to it</a>
+      <a
+      className="alex_button scratch"
+      href="https://scratch.mit.edu/projects/212668429/"
+      draggable="false"
+      >Link to Gravity Simulator
+      </a>
     </Project>
   );
 
