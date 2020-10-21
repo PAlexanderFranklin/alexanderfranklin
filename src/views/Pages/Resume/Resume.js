@@ -13,8 +13,8 @@ function Resume() {
         <h2>Work Experience</h2>
         Contracting <span className="date">July <span className="number">2020</span>-Sep <span className="number">2020</span></span> <br/>
         <ul>
-          <li><span className="bullet_small">Javascript</span></li>
-          <li><span className="bullet_small">PHP</span></li>
+          {/*<li><span className="bullet_small">Javascript</span></li>
+          <li><span className="bullet_small">PHP</span></li>*/}
           <li><span className="bullet_small">Lua</span></li>
         </ul>
         <hr/>
