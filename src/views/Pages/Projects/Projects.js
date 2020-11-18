@@ -37,8 +37,6 @@ function Projects() {
         {barArray /*bar display */}
         <button onClick={() => setBars(bars + 1)} className="arrow_button"><h1>{'>'}</h1></button>
       </div>
-      The styling of the website is not entirely my own, but I wrote the code for it and
-      learned much about graphical design in the process.
     </Project>
   );
 
