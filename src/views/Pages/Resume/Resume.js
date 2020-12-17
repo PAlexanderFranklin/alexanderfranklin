@@ -25,6 +25,7 @@ function Resume() {
       </div>
       <div>
         <h2>Education</h2>
+        Portland Community College GPA: <span className="number">4.0 <span className="date">2020-2021</span></span> <br/>
         Arizona State University Bachelor of Science in Software Engineering <span className="date">Est. <span className="number">2024</span></span>
         <hr/>
         SAT
