@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar'
 import DarkModeButton from './DarkModeButton/DarkModeButton'
 import Home from './Pages/Home/Home'
 import Resume from './Pages/Resume/Resume'
+import PantryAid from './Pages/PantryAid/PantryAid'
 import Projects from './Pages/Projects/Projects'
 import {Route} from 'react-router-dom'
 
@@ -24,6 +25,7 @@ function App() {
       <div className="content">
         <Route path="/" exact component={Home} />
         <Route path="/resume" component={Resume} />
+        <Route path="/pantryaid" component={PantryAid} />
         <Route path="/projects" component={Projects} />
       </div>
     </div>
