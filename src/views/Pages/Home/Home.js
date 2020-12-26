@@ -13,7 +13,7 @@ function Home() {
         </p>
         <p>
           I don't just build websites. I like to code no matter the medium, <br/>
-          be it Python, or a visual language like scratch, or even a video game.
+          be it Python, a visual language like scratch, or even a video game.
         </p>
         <p>
           Read more about this website on the projects page.
