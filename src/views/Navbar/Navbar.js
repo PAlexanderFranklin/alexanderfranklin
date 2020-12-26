@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import Tab from './Tab/Tab'
+import Tab from './Tab'
 
 function Navbar() {
   return (
