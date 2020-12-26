@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import Project from './Project/Project'
+import Project from './Projects/Project'
 
 function Projects() {
   let projectArray = [];

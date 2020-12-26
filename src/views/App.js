@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './Navbar/Navbar'
 import DarkModeButton from './DarkModeButton/DarkModeButton'
-import Home from './Pages/Home/Home'
-import Resume from './Pages/Resume/Resume'
-import PantryAid from './Pages/PantryAid/PantryAid'
-import Projects from './Pages/Projects/Projects'
+import Home from './Pages/Home'
+import Resume from './Pages/Resume'
+import PantryAid from './Pages/PantryAid'
+import Projects from './Pages/Projects'
 import {Route} from 'react-router-dom'
 
 function App() {
