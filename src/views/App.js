@@ -4,7 +4,7 @@ import Navbar from './Navbar/Navbar'
 import DarkModeButton from './DarkModeButton/DarkModeButton'
 import Home from './Pages/Home'
 import Resume from './Pages/Resume'
-import PantryAid from './Pages/PantryAid'
+import PantryAid from './PantryAid/PantryAid'
 import Projects from './Pages/Projects'
 import {Route} from 'react-router-dom'
 
