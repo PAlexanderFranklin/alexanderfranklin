@@ -7,7 +7,7 @@ function Navbar() {
     <header className="header">
       <nav className="Navbar">
         <ul>
-          <Tab link="/" exact="true">About Me</Tab>
+          <Tab link="/" exact={true}>About Me</Tab>
           <Tab link="/resume">Resume</Tab>
           <Tab link="/projects">Projects</Tab>
         </ul>
