@@ -1,8 +1,9 @@
 import React from 'react';
 import './PantryAid.css';
+import SignOut from './SignOut'
 import Amplify from 'aws-amplify';
 import awsconfig from '../../aws-exports';
-import {AmplifyAuthenticator, AmplifySignUp, AmplifySignOut} from '@aws-amplify/ui-react';
+import {AmplifyAuthenticator, AmplifySignUp} from '@aws-amplify/ui-react';
 import {AuthState, onAuthUIStateChange} from '@aws-amplify/ui-components';
 
 Amplify.configure(awsconfig);
@@ -21,7 +22,7 @@ function PantryAid() {
   return authState === AuthState.SignedIn && user ? (
       <div className="PantryAid">
           <div>Hello, {user.username}</div>
-          <AmplifySignOut />
+          <SignOut />
       </div>
     ) : (
       <AmplifyAuthenticator usernameAlias="email">
