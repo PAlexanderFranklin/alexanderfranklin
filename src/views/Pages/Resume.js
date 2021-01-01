@@ -7,7 +7,7 @@ function Resume() {
       <div>
         <h2 className="no_top_margin">Technical Skills</h2>
         Languages: Javascript, HTML<span className="number">5</span>, CSS, PHP, Python, Lua, Applescript, C++. <br/>
-        Frameworks and Technologies: React, Redux, Git Version Control, AWS(Amplify), Node.js, Solar2D
+        Frameworks and Technologies: React, Git Version Control, AWS(Amplify, Cognito), Node.js, Solar2D
       </div>
       <div>
         <h2>Work Experience</h2>
@@ -25,19 +25,18 @@ function Resume() {
       </div>
       <div>
         <h2>Education</h2>
-        Portland Community College GPA: <span className="number">4.0 <span className="date">2020-2021</span></span> <br/>
+        CLEP
+        <ul>
+          <li><span className="bullet_small">Credits: <span className="number">9</span></span></li>
+        </ul>
+        <hr/>
+        Portland Community College <span className="date number">2020-2021</span>
+        <ul>
+          <li><span className="bullet_small">Credits: <span className="number">18</span></span></li>
+          <li><span className="bullet_small">GPA: <span className="number">4.0</span></span></li>
+        </ul>
+        <hr/>
         Arizona State University Bachelor of Science in Software Engineering <span className="date">Est. <span className="number">2024</span></span>
-        <hr/>
-        SAT
-        <ul>
-          <li><span className="bullet_small">Score: <span className="number">1390/1600</span></span></li>
-          <li><span className="bullet_small"><span className="number">94</span>th percentile</span></li>
-        </ul>
-        <hr/>
-        High School Diploma <span className="date">April <span className="number">2020</span></span>
-        <ul>
-          <li><span className="bullet_small">Homeschool</span></li>
-        </ul>
       </div>
     </div>
   );

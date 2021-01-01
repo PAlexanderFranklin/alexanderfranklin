@@ -6,7 +6,7 @@ import Home from './Pages/Home'
 import Resume from './Pages/Resume'
 import PantryAid from './PantryAid/PantryAid'
 import Projects from './Pages/Projects'
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -15,20 +15,26 @@ function App() {
     appClass = "dark_mode";
   }
   return (
-    <div className={"App " + appClass}>
-      <div className="background_tint" />
-      <Navbar />
-      <DarkModeButton 
-        darkMode={darkMode} 
-        setDarkMode={setDarkMode}
-      />
-      <div className="content">
-        <Route path="/" exact component={Home} />
-        <Route path="/resume" component={Resume} />
-        <Route path="/pantryaid" component={PantryAid} />
-        <Route path="/projects" component={Projects} />
-      </div>
-    </div>
+    <Switch>
+      <Route path="/pantryaid" component={PantryAid} />
+      <Route path="/">
+        <div className={"App " + appClass}>
+          <div className="background_tint" />
+          <Navbar />
+          <DarkModeButton 
+            darkMode={darkMode} 
+            setDarkMode={setDarkMode}
+          />
+          <div className="content">
+            <Switch>
+              <Route path="/resume" component={Resume} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/" component={Home} />
+            </Switch>
+          </div>
+        </div>
+      </Route>
+    </Switch>
   );
 }
 

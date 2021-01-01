@@ -21,10 +21,10 @@ function Home() {
       </div>
       <div className="Contact bubble">
         <h2>How to contact me</h2>
-        <p>
+        <div>
           <p><MdMailOutline className="icon"/> PAlexanderFranklin@gmail.com </p>
           <MdPhoneIphone className="icon"/> <span className="number">509-930-9363</span>
-        </p>
+        </div>
       </div>
     </div>
   );
