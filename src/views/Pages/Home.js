@@ -8,11 +8,11 @@ function Home() {
       <div className="Home bubble">
         <h2>My name is Alexander Franklin</h2>
         <p>
-          I am a web developer, which means I create websites like this. <br/>
+          I am a web developer, which means I create websites like this.
           It also means I google things a lot.
         </p>
         <p>
-          I don't just build websites. I like to code no matter the medium, <br/>
+          I don't just build websites. I like to code no matter the medium,
           be it Python, a visual language like scratch, or even a video game.
         </p>
         <p>
