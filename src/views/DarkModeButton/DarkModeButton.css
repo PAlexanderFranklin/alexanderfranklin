@@ -10,7 +10,7 @@
     font-weight: 500;
 }
 
-@media (max-width: 70rem) {	
+@media (max-width: 78rem) {	
     .dark_mode_toggle {	
         position: relative;
         left: 0rem;
