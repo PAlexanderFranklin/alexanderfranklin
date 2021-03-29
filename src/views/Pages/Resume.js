@@ -32,7 +32,7 @@ function Resume() {
         <hr/>
         Portland Community College <span className="date number">2020-2021</span>
         <ul>
-          <li><span className="bullet_small">Credits: <span className="number">18</span></span></li>
+          <li><span className="bullet_small">Credits: <span className="number">32</span></span></li>
           <li><span className="bullet_small">GPA: <span className="number">4.0</span></span></li>
         </ul>
         <hr/>
