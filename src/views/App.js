@@ -5,6 +5,7 @@ import DarkModeButton from './DarkModeButton/DarkModeButton'
 import Home from './Pages/Home'
 import Resume from './Pages/Resume'
 import PantryAid from './PantryAid/PantryAid'
+import PhotoUpload from './Demonstration/PhotoUpload'
 import Projects from './Pages/Projects'
 import {Route, Switch} from 'react-router-dom'
 
@@ -29,6 +30,7 @@ function App() {
             <Switch>
               <Route path="/resume" component={Resume} />
               <Route path="/projects" component={Projects} />
+              <Route path="/PhotoUpload" component={PhotoUpload} />
               <Route path="/" component={Home} />
             </Switch>
           </div>
