@@ -35,8 +35,6 @@ function Resume() {
           <li><span className="bullet_small">Credits: <span className="number">32</span></span></li>
           <li><span className="bullet_small">GPA: <span className="number">4.0</span></span></li>
         </ul>
-        <hr/>
-        Arizona State University Bachelor of Science in Software Engineering <span className="date">Est. <span className="number">2024</span></span>
       </div>
     </div>
   );
