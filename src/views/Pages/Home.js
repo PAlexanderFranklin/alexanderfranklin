@@ -6,14 +6,14 @@ function Home() {
   return (
     <div className="content">
       <div className="Home bubble">
-        <h2>My name is Alexander Franklin</h2>
+        <h2>I'm Alexander Franklin</h2>
         <p>
-          I am a web developer, which means I create websites like this.
-          It also means I google things a lot.
+          I'm a hobbyist programmer looking to grow my skills into a career.
         </p>
         <p>
-          I don't just build websites. I like to code no matter the medium,
-          be it Python, a visual language like scratch, or even a video game.
+          I can build websites, like the one you're looking at. I am extremely
+          interested in Python development; I love to automate various tasks with it.
+          I like to play games that are about programming.
         </p>
         <p>
           Read more about this website on the projects page.
