@@ -24,7 +24,7 @@ function Projects() {
   //End of bar display builder
 
   projectArray.push(
-    <Project className="bubble" title="alexanderfranklin.net">
+    <Project title="alexanderfranklin.net">
       The website you are on was
       built using react and is hosted on AWS.
       I use react router to combine the performance of single page applications
@@ -42,7 +42,7 @@ function Projects() {
 
 
   projectArray.push(
-    <Project className="bubble" title="Gravity Rotation Simulator">
+    <Project title="Gravity Rotation Simulator">
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
       basic air resistance. It also has basic collision detection. <hr/>
