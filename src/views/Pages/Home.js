@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Weather from './Home/Weather';
 import { MdMailOutline, MdPhoneIphone } from "react-icons/md";
 
 function Home() {

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import Navbar from './Navbar/Navbar'
-import DarkModeButton from './DarkModeButton/DarkModeButton'
-import Home from './Pages/Home'
-import Resume from './Pages/Resume'
-import PantryAid from './PantryAid/PantryAid'
-import PhotoUpload from './Demonstration/PhotoUpload'
-import Projects from './Pages/Projects'
-import {Route, Switch} from 'react-router-dom'
+import Navbar from './Navbar/Navbar';
+import DarkModeButton from './DarkModeButton/DarkModeButton';
+import Home from './Pages/Home';
+import Resume from './Pages/Resume';
+import PantryAid from './PantryAid/PantryAid';
+import PhotoUpload from './Demonstration/PhotoUpload';
+import Projects from './Pages/Projects';
+import {Route, Switch} from 'react-router-dom';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import Project from './Projects/Project'
+import Project from './Projects/Project';
 
 function Projects() {
   let projectArray = [];
@@ -50,7 +50,9 @@ function Projects() {
       className="alex_button scratch"
       href="https://scratch.mit.edu/projects/212668429/"
       draggable="false"
-      >Link to Gravity Simulator
+      target="_blank"
+      rel="noopener noreferrer">
+        Link to Gravity Simulator
       </a>
     </Project>
   );
@@ -60,7 +62,9 @@ function Projects() {
       <a
         className="Project bubble git_button alex_button"
         href="https://github.com/PAlexanderFranklin"
-        draggable="false">
+        draggable="false"
+        target="_blank"
+        rel="noopener noreferrer">
           VISIT MY GITHUB
       </a>
       {projectArray}
