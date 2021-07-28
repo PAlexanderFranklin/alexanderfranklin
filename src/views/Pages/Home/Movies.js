@@ -4,30 +4,27 @@ import './Movies.css';
 import Row from './Row';
 
 function Movies() {
+  const [refresh, setRefresh] = useState(0);
   const [title, setTitle] = useState('');
   const [genre, setGenre] = useState('');
   const [rating, setRating] = useState(1);
 
-  let prefixes = ["red ","blue ","yellow ",
+  const prefixes = ["red ","blue ","yellow ",
                   "power ","super ","speedy ",
                   "the last ","the first "];
-  let names = ["cars","knights","men",
+  const names = ["cars","knights","men",
               "dwarves","atom smasher","pump stack",
               "fluffy wamblers","dragon"];
-  let genres = ["action", "adventure", "drama", "horror"];
+  const genres = ["action", "adventure", "drama", "horror"];
 
   useEffect(() => {
     setTitle(prefixes[Math.floor(Math.random() * prefixes.length)]
     + names[Math.floor(Math.random() * names.length)]);
     setGenre(genres[Math.floor(Math.random() * genres.length)]);
     setRating(Math.floor(Math.random() * 11) * 0.5);
-  }, [])
+  }, [refresh]);
 
-
-  let rows = [];
-  rows.push(<Row title={title} rating={rating} genre={genre}/>);
-
-  const [movieData, setMovieData] = useState("hi");
+  const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
       let data = await API.get("moviesAPI", "/movies/title");
@@ -35,7 +32,7 @@ function Movies() {
       setMovieData(data);
     }
     stuff();
-  }, [])
+  }, [refresh])
 
   function addMovie() {
     API.post("moviesAPI", "/movies", {
@@ -44,13 +41,17 @@ function Movies() {
         genre: genre,
         rating: rating
       }
-    }).then((e) => console.log(e));
+    }).then((e) => {console.log(e)
+      setRefresh(refresh + 1);
+    });
   }
 
   return (
     <div className="Movies bubble">
       <button onClick={addMovie}>Add a movie to the database</button>
-      {rows}
+      {movieData.map(element => 
+        <Row title={element.title} rating={element.rating} genre={element.genre} />
+      )}
     </div>
   );
 }
