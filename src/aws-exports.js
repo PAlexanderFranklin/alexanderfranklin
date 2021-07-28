@@ -7,7 +7,21 @@ const awsmobile = {
     "aws_cognito_region": "us-west-2",
     "aws_user_pools_id": "us-west-2_4bskUPgA7",
     "aws_user_pools_web_client_id": "722mmn0a5mht7q53cof5djv7po",
-    "oauth": {}
+    "oauth": {},
+    "aws_dynamodb_all_tables_region": "us-west-2",
+    "aws_dynamodb_table_schemas": [
+        {
+            "tableName": "movies-dev",
+            "region": "us-west-2"
+        }
+    ],
+    "aws_cloud_logic_custom": [
+        {
+            "name": "movieAPI",
+            "endpoint": "https://ax5bzmyft6.execute-api.us-west-2.amazonaws.com/dev",
+            "region": "us-west-2"
+        }
+    ]
 };
 
 
