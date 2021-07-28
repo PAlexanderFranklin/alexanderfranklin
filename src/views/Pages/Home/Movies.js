@@ -4,37 +4,52 @@ import './Movies.css';
 import Row from './Row';
 
 function Movies() {
-  let movies = [];
+  const [title, setTitle] = useState('');
+  const [genre, setGenre] = useState('');
+  const [rating, setRating] = useState(1);
+
   let prefixes = ["red ","blue ","yellow ",
                   "power ","super ","speedy ",
                   "the last ","the first "];
   let names = ["cars","knights","men",
               "dwarves","atom smasher","pump stack",
               "fluffy wamblers","dragon"];
-  let amount = Math.floor(Math.random()*15);
+  let genres = ["action", "adventure", "drama", "horror"];
 
-  for (let i = 0; i < amount; i++) {
-    let a = new Object();
-    movies.unshift(a)
-    movies[0].name = (prefixes[Math.floor(Math.random() * prefixes.length)]
-                    + names[Math.floor(Math.random() * names.length)]);
-    movies[0].rating = (Math.floor(Math.random() * 11) * 0.5);
-  }
+  useEffect(() => {
+    setTitle(prefixes[Math.floor(Math.random() * prefixes.length)]
+    + names[Math.floor(Math.random() * names.length)]);
+    setGenre(genres[Math.floor(Math.random() * genres.length)]);
+    setRating(Math.floor(Math.random() * 11) * 0.5);
+  }, [])
+
 
   let rows = [];
-  rows.push(<Row title="Safety Last" rating="5"/>);
+  rows.push(<Row title={title} rating={rating} genre={genre}/>);
 
   const [movieData, setMovieData] = useState("hi");
   useEffect(() => {
     async function stuff() {
-      return await API.get("movieAPI", "/movies");
+      let data = await API.get("moviesAPI", "/movies/title");
+      console.log(data);
+      setMovieData(data);
     }
-    setMovieData(stuff());
-    console.log(movieData);
+    stuff();
   }, [])
+
+  function addMovie() {
+    API.post("moviesAPI", "/movies", {
+      body: {
+        title: title,
+        genre: genre,
+        rating: rating
+      }
+    }).then((e) => console.log(e));
+  }
 
   return (
     <div className="Movies bubble">
+      <button onClick={addMovie}>Add a movie to the database</button>
       {rows}
     </div>
   );

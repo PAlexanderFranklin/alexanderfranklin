@@ -17,8 +17,8 @@ const awsmobile = {
     ],
     "aws_cloud_logic_custom": [
         {
-            "name": "movieAPI",
-            "endpoint": "https://ax5bzmyft6.execute-api.us-west-2.amazonaws.com/dev",
+            "name": "moviesAPI",
+            "endpoint": "https://jgbf4z96jj.execute-api.us-west-2.amazonaws.com/dev",
             "region": "us-west-2"
         }
     ]

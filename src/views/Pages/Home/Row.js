@@ -4,7 +4,7 @@ import './Row.css';
 function Row(props) {
   return (
     <div className="Row">
-      <h2>{props.title}, {props.rating}</h2>
+      <h2>{props.title}, {props.rating}, {props.genre}</h2>
     </div>
   );
 }
