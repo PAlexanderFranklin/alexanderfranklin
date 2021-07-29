@@ -50,7 +50,12 @@ function Movies() {
     <div className="Movies bubble">
       <button onClick={addMovie} className="alex_button add_movies">Add a random movie to the database</button>
       {movieData.map(element => 
-        <Row title={element.title} rating={element.rating} genre={element.genre} />
+        <Row
+          title={element.title}
+          rating={element.rating}
+          genre={element.genre}
+          refresh={refresh}
+          setRefresh={setRefresh}/>
       )}
     </div>
   );
