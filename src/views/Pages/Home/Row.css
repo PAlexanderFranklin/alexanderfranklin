@@ -1,0 +1,10 @@
+.delete {
+    background: none;
+    border: none;
+    height: 1.5rem;
+    width: 2rem;
+}
+
+.dark_mode .delete_icon {
+    color: #856679;
+}
