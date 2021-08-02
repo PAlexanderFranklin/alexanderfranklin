@@ -38,6 +38,10 @@
     border-radius: 1.5rem;
 }
 
+.invisible {
+    display: none;
+}
+
 .alex_button {
     text-decoration: none;
     background-color: var(--secondary-background-color);

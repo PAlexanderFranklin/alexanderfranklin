@@ -5,9 +5,6 @@ import Row from './Row';
 
 function Movies() {
   const [refresh, setRefresh] = useState(0);
-  const [title, setTitle] = useState('');
-  const [genre, setGenre] = useState('');
-  const [rating, setRating] = useState(1);
 
   const prefixes = ["red ","blue ","yellow ",
                   "power ","super ","speedy ",
@@ -18,18 +15,10 @@ function Movies() {
   const genres = ["adventure", "drama", "horror",
                   "comedy", "romance", "mystery"];
 
-  useEffect(() => {
-    setTitle(prefixes[Math.floor(Math.random() * prefixes.length)]
-    + names[Math.floor(Math.random() * names.length)]);
-    setGenre(genres[Math.floor(Math.random() * genres.length)]);
-    setRating(Math.floor(Math.random() * 11) * 0.5);
-  }, [refresh]);
-
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
       let data = await API.get("moviesAPI", "/movies/title");
-      console.log(data);
       setMovieData(data);
     }
     stuff();
@@ -38,9 +27,10 @@ function Movies() {
   function addMovie() {
     API.post("moviesAPI", "/movies", {
       body: {
-        title: title,
-        genre: genre,
-        rating: rating
+        title: prefixes[Math.floor(Math.random() * prefixes.length)]
+        + names[Math.floor(Math.random() * names.length)],
+        genre: genres[Math.floor(Math.random() * genres.length)],
+        rating: Math.floor(Math.random() * 11) * 0.5
       }
     }).then((e) => {console.log(e)
       setRefresh(refresh + 1);
@@ -62,6 +52,7 @@ function Movies() {
         <tbody>
           {movieData.map(element => 
             <Row
+              key={element.title}
               title={element.title}
               rating={element.rating}
               genre={element.genre}

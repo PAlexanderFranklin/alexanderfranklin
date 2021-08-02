@@ -33,6 +33,8 @@
 }
 
 .movie_table tbody tr{
+    color: black;
+    background-color: white;
     border-bottom: 1px solid lightgray;
 }
 
