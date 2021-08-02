@@ -4,8 +4,6 @@ import './Movies.css';
 import Row from './Row';
 
 function Movies() {
-  const [refresh, setRefresh] = useState(0);
-
   const prefixes = ["red ","blue ","yellow ",
                   "power ","super ","speedy ",
                   "the last ","the first "];
@@ -22,19 +20,23 @@ function Movies() {
       setMovieData(data);
     }
     stuff();
-  }, [refresh])
+  }, [])
 
   function addMovie() {
+    let title = prefixes[Math.floor(Math.random() * prefixes.length)]
+    + names[Math.floor(Math.random() * names.length)];
+    let genre = genres[Math.floor(Math.random() * genres.length)];
+    let rating = Math.floor(Math.random() * 11) * 0.5;
     API.post("moviesAPI", "/movies", {
       body: {
-        title: prefixes[Math.floor(Math.random() * prefixes.length)]
-        + names[Math.floor(Math.random() * names.length)],
-        genre: genres[Math.floor(Math.random() * genres.length)],
-        rating: Math.floor(Math.random() * 11) * 0.5
+        title: title,
+        genre: genre,
+        rating: rating
       }
-    }).then((e) => {console.log(e)
-      setRefresh(refresh + 1);
-    });
+    }).then(
+      () => setMovieData([...movieData, {title: title, genre: genre, rating: rating}]),
+      (e) => console.log(e)
+    );
   }
 
   return (
@@ -55,9 +57,7 @@ function Movies() {
               key={element.title}
               title={element.title}
               rating={element.rating}
-              genre={element.genre}
-              refresh={refresh}
-              setRefresh={setRefresh}/>
+              genre={element.genre}/>
           )}
         </tbody>
       </table>
