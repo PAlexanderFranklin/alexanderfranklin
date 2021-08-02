@@ -41,6 +41,10 @@ function Movies() {
 
   return (
     <div className="Movies bubble">
+      <p>
+        The following table is a simple database demonstration
+        using AWS API gateway, Lambda, and DynamoDB.
+      </p>
       <button onClick={addMovie} className="alex_button add_movies">Add a random movie to the database</button>
       <table className="movie_table">
         <thead>
