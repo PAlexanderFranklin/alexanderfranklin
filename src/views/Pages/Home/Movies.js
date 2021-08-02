@@ -15,7 +15,8 @@ function Movies() {
   const names = ["cars","knights","men",
               "dwarves","atom smasher","pump stack",
               "fluffy wamblers","dragon"];
-  const genres = ["action", "adventure", "drama", "horror"];
+  const genres = ["adventure", "drama", "horror",
+                  "comedy", "romance", "mystery"];
 
   useEffect(() => {
     setTitle(prefixes[Math.floor(Math.random() * prefixes.length)]
@@ -49,14 +50,26 @@ function Movies() {
   return (
     <div className="Movies bubble">
       <button onClick={addMovie} className="alex_button add_movies">Add a random movie to the database</button>
-      {movieData.map(element => 
-        <Row
-          title={element.title}
-          rating={element.rating}
-          genre={element.genre}
-          refresh={refresh}
-          setRefresh={setRefresh}/>
-      )}
+      <table className="movie_table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Genre</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          {movieData.map(element => 
+            <Row
+              title={element.title}
+              rating={element.rating}
+              genre={element.genre}
+              refresh={refresh}
+              setRefresh={setRefresh}/>
+          )}
+        </tbody>
+      </table>
     </div>
   );
 }

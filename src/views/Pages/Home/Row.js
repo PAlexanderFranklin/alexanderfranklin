@@ -1,6 +1,7 @@
 import { API } from 'aws-amplify';
 import React from 'react';
 import './Row.css';
+import { FaMinusSquare } from "react-icons/fa";
 
 function Row(props) {
   const {refresh, setRefresh, title, rating, genre} = props;
@@ -10,10 +11,12 @@ function Row(props) {
     )
   }
   return (
-    <div className="Row">
-      <h2>{title}, {rating}, {genre}</h2>
-      <button onClick={deleteMovie}>Delete</button>
-    </div>
+    <tr className="Row">
+      <td>{title}</td>
+      <td>{rating}</td>
+      <td>{genre}</td>
+      <td><button onClick={deleteMovie} className="delete"><FaMinusSquare className="icon" /></button></td>
+    </tr>
   );
 }
 
