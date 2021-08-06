@@ -1,6 +1,7 @@
 import { API } from 'aws-amplify';
 import React, { useEffect, useState } from 'react';
 import './Movies.css';
+import AddMovie from './AddMovie';
 import Row from './Row';
 
 function Movies() {
@@ -46,6 +47,7 @@ function Movies() {
         using AWS API gateway, Lambda, and DynamoDB.
       </p>
       <button onClick={addMovie} className="alex_button add_movies">Add a random movie to the database</button>
+      <AddMovie />
       <table className="movie_table">
         <thead>
           <tr>
