@@ -16,7 +16,7 @@ function Row(props) {
       <td>{title}</td>
       <td>{rating}</td>
       <td>{genre}</td>
-      <td><button onClick={deleteMovie} className="delete"><FaMinusSquare className="icon delete_icon" /></button></td>
+      <td><button onClick={deleteMovie} className="delete_movie"><FaMinusSquare className="icon delete_icon" /></button></td>
     </tr>
   );
 }
