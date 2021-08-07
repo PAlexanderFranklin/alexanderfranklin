@@ -11,14 +11,14 @@ const awsmobile = {
     "aws_dynamodb_all_tables_region": "us-west-2",
     "aws_dynamodb_table_schemas": [
         {
-            "tableName": "movies-dev",
+            "tableName": "MovieDB-dev",
             "region": "us-west-2"
         }
     ],
     "aws_cloud_logic_custom": [
         {
-            "name": "moviesAPI",
-            "endpoint": "https://jgbf4z96jj.execute-api.us-west-2.amazonaws.com/dev",
+            "name": "MovieAPI",
+            "endpoint": "https://6l040r6kn1.execute-api.us-west-2.amazonaws.com/dev",
             "region": "us-west-2"
         }
     ]
