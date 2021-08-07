@@ -17,7 +17,7 @@ function Movies() {
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
-      let data = await API.get("moviesAPI", "/movies/title");
+      let data = await API.get("moviesAPI", "/movies/PK");
       setMovieData(data);
     }
     stuff();
@@ -60,7 +60,7 @@ function Movies() {
         <tbody>
           {movieData.map(element => 
             <Row
-              key={element.title}
+              key={element.SK}
               title={element.title}
               rating={element.rating}
               genre={element.genre}/>
