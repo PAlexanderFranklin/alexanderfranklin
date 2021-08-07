@@ -4,10 +4,10 @@ import './Row.css';
 import { FaMinusSquare } from "react-icons/fa";
 
 function Row(props) {
-  const {title, rating, genre} = props;
+  const {key, title, rating, genre} = props;
   const [rowClass, setRowClass] = useState("");
   function deleteMovie() {
-    API.del("moviesAPI", "/movies/object/" + title).then(
+    API.del("moviesAPI", "/movies/object/user/" + key).then(
       () => setRowClass(" invisible"), e => console.log(e)
     )
   }
@@ -16,7 +16,7 @@ function Row(props) {
       <td>{title}</td>
       <td>{rating}</td>
       <td>{genre}</td>
-      <td><button onClick={deleteMovie} className="delete"><FaMinusSquare className="icon delete_icon" /></button></td>
+      <td><button onClick={deleteMovie} className="delete_movie"><FaMinusSquare className="icon delete_icon" /></button></td>
     </tr>
   );
 }
