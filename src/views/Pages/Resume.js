@@ -7,7 +7,7 @@ function Resume() {
       <div>
         <h2 className="no_top_margin">Technical Skills</h2>
         Languages: Javascript, HTML<span className="number">5</span>, CSS, PHP, Python, Lua, Applescript, C++. <br/>
-        Frameworks and Technologies: React, Git Version Control, AWS(Amplify, Cognito), Node.js, Solar2D
+        Frameworks and Technologies: React, Git Version Control, AWS(Amplify, Cognito, DynamoDB), Node.js, Solar2D
       </div>
       <div>
         <h2>Work Experience</h2>
