@@ -27,7 +27,7 @@ function Home() {
           <MdPhoneIphone className="icon"/> <span className="number">509-930-9363</span>
         </div>
       </div>
-      <Movies/>
+      {/* <Movies/> */}
     </div>
   );
 }
