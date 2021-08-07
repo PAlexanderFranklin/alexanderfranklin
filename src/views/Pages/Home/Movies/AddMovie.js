@@ -1,14 +1,14 @@
 import React from 'react';
-import './PantryAid.css';
+import './AddMovie.css';
 import SignOut from './SignOut'
 import Amplify from 'aws-amplify';
-import awsconfig from '../../aws-exports';
+import awsconfig from '../../../../aws-exports';
 import {AmplifyAuthenticator, AmplifySignUp} from '@aws-amplify/ui-react';
 import {AuthState, onAuthUIStateChange} from '@aws-amplify/ui-components';
 
 Amplify.configure(awsconfig);
 
-function PantryAid() {
+function AddMovie(props) {
   const [authState, setAuthState] = React.useState();
   const [user, setUser] = React.useState();
 
@@ -20,7 +20,7 @@ function PantryAid() {
   }, []);
 
   return authState === AuthState.SignedIn && user ? (
-      <div className="PantryAid">
+      <div className="AddMovie">
           <div>Hello, {user.username}</div>
           <SignOut />
       </div>
@@ -38,4 +38,4 @@ function PantryAid() {
   );
 }
 
-export default PantryAid
+export default AddMovie;

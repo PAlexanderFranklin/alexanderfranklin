@@ -4,7 +4,6 @@ import Navbar from './Navbar/Navbar';
 import DarkModeButton from './DarkModeButton/DarkModeButton';
 import Home from './Pages/Home';
 import Resume from './Pages/Resume';
-import PantryAid from './PantryAid/PantryAid';
 import PhotoUpload from './Demonstration/PhotoUpload';
 import Projects from './Pages/Projects';
 import {Route, Switch} from 'react-router-dom';
@@ -17,7 +16,6 @@ function App() {
   }
   return (
     <Switch>
-      <Route path="/pantryaid" component={PantryAid} />
       <Route path="/">
         <div className={"App " + appClass}>
           <div className="background_tint" />

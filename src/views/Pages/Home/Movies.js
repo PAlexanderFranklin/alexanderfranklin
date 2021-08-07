@@ -1,8 +1,8 @@
 import { API } from 'aws-amplify';
 import React, { useEffect, useState } from 'react';
 import './Movies.css';
-import AddMovie from './AddMovie';
-import Row from './Row';
+import AddMovie from './Movies/AddMovie';
+import Row from './Movies/Row';
 
 function Movies() {
   const prefixes = ["red ","blue ","yellow ",
