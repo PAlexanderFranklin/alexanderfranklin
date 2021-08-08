@@ -17,7 +17,7 @@ function Movies() {
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
-      let data = await API.get("moviesAPI", "/movies/PK");
+      let data = await API.get("MovieAPI", "/movies/PK");
       setMovieData(data);
     }
     stuff();
@@ -28,7 +28,7 @@ function Movies() {
     + names[Math.floor(Math.random() * names.length)];
     let genre = genres[Math.floor(Math.random() * genres.length)];
     let rating = Math.floor(Math.random() * 11) * 0.5;
-    API.post("moviesAPI", "/movies", {
+    API.post("MovieAPI", "/movies", {
       body: {
         title: title,
         genre: genre,

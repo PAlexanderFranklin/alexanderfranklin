@@ -1,9 +1,9 @@
 import React from 'react';
 import './AddMovie.css';
-import SignOut from './SignOut'
+import SignOut from './SignOut';
 import Amplify from 'aws-amplify';
 import awsconfig from '../../../../aws-exports';
-import {AmplifyAuthenticator, AmplifySignUp} from '@aws-amplify/ui-react';
+import {AmplifyAuthenticator, AmplifySignUp } from '@aws-amplify/ui-react';
 import {AuthState, onAuthUIStateChange} from '@aws-amplify/ui-components';
 
 Amplify.configure(awsconfig);
@@ -25,14 +25,14 @@ function AddMovie(props) {
           <SignOut />
       </div>
     ) : (
-      <AmplifyAuthenticator usernameAlias="email">
+      <AmplifyAuthenticator>
         <AmplifySignUp
           slot="sign-up"
           formFields={[
+            {type: "username"},
             {type: "email"},
             {type: "password"}
           ]}
-          usernameAlias="email"
         />
       </AmplifyAuthenticator>
   );

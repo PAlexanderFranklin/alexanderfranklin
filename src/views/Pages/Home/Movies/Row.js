@@ -7,7 +7,7 @@ function Row(props) {
   const {key, title, rating, genre} = props;
   const [rowClass, setRowClass] = useState("");
   function deleteMovie() {
-    API.del("moviesAPI", "/movies/object/user/" + key).then(
+    API.del("MovieAPI", "/movies/object/PK/" + key).then(
       () => setRowClass(" invisible"), e => console.log(e)
     )
   }
