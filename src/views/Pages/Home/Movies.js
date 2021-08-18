@@ -4,6 +4,7 @@ import {AmplifyAuthenticator, AmplifyAuthContainer, AmplifySignUp, AmplifySignOu
 import {AuthState, onAuthUIStateChange} from '@aws-amplify/ui-components';
 import React, { useEffect, useState } from 'react';
 import './Movies.css';
+import AddMovie from './Movies/AddMovie';
 import Row from './Movies/Row';
 
 Amplify.configure(awsconfig);
@@ -49,13 +50,18 @@ function Movies() {
   return (
     <div className="Movies bubble">
       <p>
-        The following table is a simple database demonstration
-        using AWS API gateway, Lambda, and DynamoDB.
+        The following table is a database demonstration
+        using AWS API gateway, Lambda, and DynamoDB coupled
+        with authentication through AWS Cognito. Signing in
+        allows you to create, read, and delete items tied
+        to your account. Guest users can only read items
+        from my own account.
       </p>
       {authState === AuthState.SignedIn && user ? (
-        <div className="AddMovie">
+        <div>
             <div>Hello, {user.username}</div>
             <AmplifySignOut />
+            <AddMovie />
         </div>
       ) : (
         <AmplifyAuthContainer>
