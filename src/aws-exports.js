@@ -3,6 +3,7 @@
 
 const awsmobile = {
     "aws_project_region": "us-west-2",
+    "aws_cognito_identity_pool_id": "us-west-2:9910446e-5ee2-420f-8828-3712b9e9a054",
     "aws_cognito_region": "us-west-2",
     "aws_user_pools_id": "us-west-2_2FJbJu4Na",
     "aws_user_pools_web_client_id": "68ppikq9rnhvfv6mc7tpjrh6mr",

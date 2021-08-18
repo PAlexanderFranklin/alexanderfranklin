@@ -6,6 +6,10 @@
     font-size: 1.2rem;
 }
 
+amplify-authenticator {
+    --container-height: 0vh;
+}
+
 .add_movies {
     display: inline-block;
     margin: 1rem 0rem;

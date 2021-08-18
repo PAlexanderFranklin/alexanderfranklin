@@ -4,19 +4,30 @@ import './Row.css';
 import { FaMinusSquare } from "react-icons/fa";
 
 function Row(props) {
-  const {key, title, rating, genre} = props;
+  const {id, title, rating, genre, authState} = props;
   const [rowClass, setRowClass] = useState("");
   function deleteMovie() {
-    API.del("MovieAPI", "/movies/object/PK/" + key).then(
-      () => setRowClass(" invisible"), e => console.log(e)
-    )
+    try {
+      API.del("MovieAPI", "/movies/" + id.replace("#", "%23")).then(
+        () => setRowClass(" invisible"), e => console.log(e)
+      )
+    }
+    catch {
+      console.log("failed to delete " + title)
+    }
   }
   return (
     <tr className={"Row" + rowClass}>
       <td>{title}</td>
       <td>{rating}</td>
       <td>{genre}</td>
-      <td><button onClick={deleteMovie} className="delete_movie"><FaMinusSquare className="icon delete_icon" /></button></td>
+      {authState === "signedin" ?
+        <td>
+          <button onClick={deleteMovie} className="delete_movie">
+            <FaMinusSquare className="icon delete_icon" />
+          </button>
+        </td>
+      : null}
     </tr>
   );
 }
