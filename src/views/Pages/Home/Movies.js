@@ -11,10 +11,10 @@ Amplify.configure(awsconfig);
 
 function Movies() {
 
-  const [authState, setAuthState] = React.useState();
-  const [user, setUser] = React.useState();
+  const [authState, setAuthState] = useState();
+  const [user, setUser] = useState();
 
-  React.useEffect(() => {
+  useEffect(() => {
       onAuthUIStateChange((nextAuthState, authData) => {
           setAuthState(nextAuthState);
           setUser(authData)
@@ -81,8 +81,8 @@ function Movies() {
         <thead>
           <tr>
             <th>Title</th>
-            <th>Rating</th>
             <th>Genre</th>
+            <th>Rating</th>
             {authState === AuthState.SignedIn ? <th>Delete</th> : null}
           </tr>
         </thead>

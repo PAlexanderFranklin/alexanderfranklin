@@ -19,8 +19,8 @@ function Row(props) {
   return (
     <tr className={"Row" + rowClass}>
       <td>{title}</td>
-      <td>{rating}</td>
       <td>{genre}</td>
+      <td className="number">{rating}</td>
       {authState === "signedin" ?
         <td>
           <button onClick={deleteMovie} className="delete_movie">
