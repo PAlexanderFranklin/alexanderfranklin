@@ -5,6 +5,10 @@
     --secondary-background-color: #e9d4e9;
     --active-button-background-color: #e4c8e4;
     color: var(--color);
+    --amplify-primary-color: var(--secondary-background-color);
+    --amplify-primary-contrast: var(--color);
+    --amplify-primary-tint: var(--secondary-background-color);
+    --amplify-primary-shade: var(--active-button-background-color);
 }
 
 .dark_mode {
