@@ -1,7 +1,7 @@
 import Amplify, { API } from 'aws-amplify';
 import awsconfig from '../../../aws-exports';
 import {AmplifyAuthenticator, AmplifyAuthContainer, AmplifySignUp, AmplifySignOut } from '@aws-amplify/ui-react';
-import {AuthState, onAuthUIStateChange} from '@aws-amplify/ui-components';
+import {AuthState} from '@aws-amplify/ui-components';
 import React, { useEffect, useState } from 'react';
 import './Movies.css';
 import AddMovie from './Movies/AddMovie';
@@ -9,17 +9,8 @@ import Row from './Movies/Row';
 
 Amplify.configure(awsconfig);
 
-function Movies() {
-
-  const [authState, setAuthState] = useState();
-  const [user, setUser] = useState();
-
-  useEffect(() => {
-      onAuthUIStateChange((nextAuthState, authData) => {
-          setAuthState(nextAuthState);
-          setUser(authData)
-      });
-  }, []);
+function Movies(props) {
+  const {authState, user} = props;
 
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import {onAuthUIStateChange} from '@aws-amplify/ui-components';
+import {Route, Switch} from 'react-router-dom';
 import './App.css';
 import Navbar from './Navbar/Navbar';
 import DarkModeButton from './DarkModeButton/DarkModeButton';
@@ -6,9 +8,19 @@ import Home from './Pages/Home';
 import Resume from './Pages/Resume';
 import PhotoUpload from './Demonstration/PhotoUpload';
 import Projects from './Pages/Projects';
-import {Route, Switch} from 'react-router-dom';
 
 function App() {
+
+  const [authState, setAuthState] = useState();
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+      onAuthUIStateChange((nextAuthState, authData) => {
+          setAuthState(nextAuthState);
+          setUser(authData)
+      });
+  }, []);
+
   const [darkMode, setDarkMode] = useState(false);
   let appClass = "";
   if (darkMode) {
@@ -29,7 +41,7 @@ function App() {
               <Route path="/resume" component={Resume} />
               <Route path="/projects" component={Projects} />
               <Route path="/PhotoUpload" component={PhotoUpload} />
-              <Route path="/" component={Home} />
+              <Route path="/" render={() => <Home authState={authState} user={user}></Home>} />
             </Switch>
           </div>
         </div>
