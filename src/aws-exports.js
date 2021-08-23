@@ -3,22 +3,22 @@
 
 const awsmobile = {
     "aws_project_region": "us-west-2",
-    "aws_cognito_identity_pool_id": "us-west-2:be0cebd0-bd85-42a9-ad85-971e517c98aa",
+    "aws_cognito_identity_pool_id": "us-west-2:9910446e-5ee2-420f-8828-3712b9e9a054",
     "aws_cognito_region": "us-west-2",
-    "aws_user_pools_id": "us-west-2_SvXGp0nGU",
-    "aws_user_pools_web_client_id": "21lu97lbbmt27sjbrak1q8edss",
+    "aws_user_pools_id": "us-west-2_2FJbJu4Na",
+    "aws_user_pools_web_client_id": "68ppikq9rnhvfv6mc7tpjrh6mr",
     "oauth": {},
     "aws_dynamodb_all_tables_region": "us-west-2",
     "aws_dynamodb_table_schemas": [
         {
-            "tableName": "movies-dev",
+            "tableName": "MovieDB-dev",
             "region": "us-west-2"
         }
     ],
     "aws_cloud_logic_custom": [
         {
-            "name": "moviesAPI",
-            "endpoint": "https://jgbf4z96jj.execute-api.us-west-2.amazonaws.com/dev",
+            "name": "MovieAPI",
+            "endpoint": "https://6l040r6kn1.execute-api.us-west-2.amazonaws.com/dev",
             "region": "us-west-2"
         }
     ]

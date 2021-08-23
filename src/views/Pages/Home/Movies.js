@@ -1,69 +1,81 @@
-import { API } from 'aws-amplify';
+import Amplify, { API } from 'aws-amplify';
+import awsconfig from '../../../aws-exports';
+import {AmplifyAuthenticator, AmplifyAuthContainer, AmplifySignUp, AmplifySignOut } from '@aws-amplify/ui-react';
+import {AuthState} from '@aws-amplify/ui-components';
 import React, { useEffect, useState } from 'react';
 import './Movies.css';
-import AddMovie from './AddMovie';
-import Row from './Row';
+import AddMovie from './Movies/AddMovie';
+import Row from './Movies/Row';
 
-function Movies() {
-  const prefixes = ["red ","blue ","yellow ",
-                  "power ","super ","speedy ",
-                  "the last ","the first "];
-  const names = ["cars","knights","men",
-              "dwarves","atom smasher","pump stack",
-              "fluffy wamblers","dragon"];
-  const genres = ["adventure", "drama", "horror",
-                  "comedy", "romance", "mystery"];
+Amplify.configure(awsconfig);
+
+function Movies(props) {
+  const {authState, user} = props;
 
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
-      let data = await API.get("moviesAPI", "/movies/PK");
+      setMovieData([{
+        SK: "loading...",
+        title: "loading...",
+        genre: "loading...",
+        rating: "loading..."
+      }])
+      let data = await API.get("MovieAPI", "/movies/:PK");
       setMovieData(data);
     }
     stuff();
-  }, [])
-
-  function addMovie() {
-    let title = prefixes[Math.floor(Math.random() * prefixes.length)]
-    + names[Math.floor(Math.random() * names.length)];
-    let genre = genres[Math.floor(Math.random() * genres.length)];
-    let rating = Math.floor(Math.random() * 11) * 0.5;
-    API.post("moviesAPI", "/movies", {
-      body: {
-        title: title,
-        genre: genre,
-        rating: rating
-      }
-    }).then(
-      () => setMovieData([...movieData, {title: title, genre: genre, rating: rating}]),
-      (e) => console.log(e)
-    );
-  }
+  }, [authState])
 
   return (
     <div className="Movies bubble">
+      <h2>Movie Database</h2>
       <p>
-        The following table is a simple database demonstration
-        using AWS API gateway, Lambda, and DynamoDB.
+        The following table is a database demonstration
+        using AWS API gateway, Lambda, and DynamoDB coupled
+        with authentication through AWS Cognito. Signing in
+        allows you to create, read, and delete items tied
+        to your account. Guest users can only read items
+        from my own account.
       </p>
-      <button onClick={addMovie} className="alex_button add_movies">Add a random movie to the database</button>
-      <AddMovie />
+      {authState === AuthState.SignedIn && user ? (
+        <div className="signed_in">
+            <p>You are signed in as {user.username}</p>
+            <div className="alex_button sign_out"><AmplifySignOut /></div>
+            <AddMovie movieData={movieData} setMovieData={setMovieData} />
+        </div>
+      ) : (
+        <AmplifyAuthContainer>
+          <AmplifyAuthenticator>
+            <AmplifySignUp
+              slot="sign-up"
+              formFields={[
+                {type: "username"},
+                {type: "email"},
+                {type: "password"}
+              ]}
+            />
+          </AmplifyAuthenticator>
+        </AmplifyAuthContainer>
+      )}
       <table className="movie_table">
         <thead>
           <tr>
             <th>Title</th>
-            <th>Rating</th>
             <th>Genre</th>
-            <th>Delete</th>
+            <th>Rating</th>
+            {authState === AuthState.SignedIn ? <th>Delete</th> : null}
           </tr>
         </thead>
         <tbody>
           {movieData.map(element => 
             <Row
               key={element.SK}
+              id={element.SK}
               title={element.title}
               rating={element.rating}
-              genre={element.genre}/>
+              genre={element.genre}
+              authState={authState}/>
           )}
         </tbody>
       </table>

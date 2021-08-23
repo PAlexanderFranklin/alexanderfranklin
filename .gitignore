@@ -24,3 +24,4 @@ yarn-error.log*
 
 #amplify
 /amplify
+amplify/mock-data

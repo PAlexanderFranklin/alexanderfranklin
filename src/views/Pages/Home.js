@@ -3,7 +3,8 @@ import './Home.css';
 import Movies from './Home/Movies';
 import { MdMailOutline, MdPhoneIphone } from "react-icons/md";
 
-function Home() {
+function Home(props) {
+  const {authState, user} = props;
   return (
     <div className="content">
       <div className="Home bubble">
@@ -27,7 +28,7 @@ function Home() {
           <MdPhoneIphone className="icon"/> <span className="number">509-930-9363</span>
         </div>
       </div>
-      {/* <Movies/> */}
+      <Movies authState={authState} user={user}/>
     </div>
   );
 }
