@@ -2,8 +2,8 @@
     text-align: center;
     --color: black;
     --background-color: rgba(255, 255, 255, 0.9);
-    --secondary-background-color: #e9d4e9;
-    --active-button-background-color: #e4c8e4;
+    --secondary-background-color: #f3d9f3;
+    --active-button-background-color: #f2d0f2;
     color: var(--color);
     --amplify-primary-color: var(--secondary-background-color);
     --amplify-primary-contrast: var(--color);
@@ -14,8 +14,8 @@
 .dark_mode {
     --color: white;
     --background-color: rgba(37, 37, 37, 0.9);
-    --secondary-background-color: #856679;
-    --active-button-background-color: #8d5e7b;
+    --secondary-background-color: #ad7a9a;
+    --active-button-background-color: #a36c8e;
 }
 
 .dark_mode .background_tint {
