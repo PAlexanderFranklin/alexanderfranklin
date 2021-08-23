@@ -30,23 +30,6 @@ function Movies() {
     stuff();
   }, [authState])
 
-  // function addMovie() {
-  //   let title = prefixes[Math.floor(Math.random() * prefixes.length)]
-  //   + names[Math.floor(Math.random() * names.length)];
-  //   let genre = genres[Math.floor(Math.random() * genres.length)];
-  //   let rating = Math.floor(Math.random() * 11) * 0.5;
-  //   API.post("MovieAPI", "/movies", {
-  //     body: {
-  //       title: title,
-  //       genre: genre,
-  //       rating: rating
-  //     }
-  //   }).then(
-  //     (response) => setMovieData([...movieData, {SK: response.SK, title: title, genre: genre, rating: rating}]),
-  //     (e) => console.log(e)
-  //   );
-  // }
-
   return (
     <div className="Movies bubble">
       <p>
@@ -61,7 +44,7 @@ function Movies() {
         <div>
             <div>Hello, {user.username}</div>
             <AmplifySignOut />
-            <AddMovie />
+            <AddMovie movieData={movieData} setMovieData={setMovieData} />
         </div>
       ) : (
         <AmplifyAuthContainer>
