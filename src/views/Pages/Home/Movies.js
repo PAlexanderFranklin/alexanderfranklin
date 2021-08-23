@@ -24,6 +24,12 @@ function Movies() {
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {
     async function stuff() {
+      setMovieData([{
+        SK: "loading...",
+        title: "loading...",
+        genre: "loading...",
+        rating: "loading..."
+      }])
       let data = await API.get("MovieAPI", "/movies/:PK");
       setMovieData(data);
     }
