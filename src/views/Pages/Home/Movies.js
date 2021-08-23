@@ -32,6 +32,7 @@ function Movies() {
 
   return (
     <div className="Movies bubble">
+      <h2>Movie Database</h2>
       <p>
         The following table is a database demonstration
         using AWS API gateway, Lambda, and DynamoDB coupled
@@ -41,8 +42,8 @@ function Movies() {
         from my own account.
       </p>
       {authState === AuthState.SignedIn && user ? (
-        <div>
-            <div>Hello, {user.username}</div>
+        <div className="signed_in">
+            <p>You are signed in as {user.username}</p>
             <div className="alex_button sign_out"><AmplifySignOut /></div>
             <AddMovie movieData={movieData} setMovieData={setMovieData} />
         </div>

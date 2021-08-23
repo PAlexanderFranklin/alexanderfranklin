@@ -6,6 +6,16 @@
     font-size: 1.2rem;
 }
 
+.Movies h2 {
+    align-self: flex-start;
+}
+
+.signed_in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .sign_out {
     padding: 0.5rem;
 }

@@ -7,9 +7,11 @@ function AddMovie(props) {
   const [title, setTitle] = useState("");
   const [genre, setGenre] = useState("");
   const [rating, setRating] = useState(0);
+  const [message, setMessage] = useState("");
 
   function onSubmit(event) {
     event.preventDefault();
+    setMessage("Adding...");
     if (title !== "") {
       API.post("MovieAPI", "/movies", {
         body: {
@@ -18,12 +20,18 @@ function AddMovie(props) {
           rating: rating
         }
       }).then(
-        (response) => setMovieData([...movieData, {SK: response.SK, title: title, genre: genre, rating: rating}]),
-        (e) => console.log(e)
+        (response) => {
+          setMovieData([...movieData, {SK: response.SK, title: title, genre: genre, rating: rating}]);
+          setMessage("Your movie has been added.");
+        },
+        (e) => {
+          setMessage("Something went wrong!");
+          console.log(e);
+        }
       );
     }
     else {
-      console.log("Please add a title!");
+      setMessage("Please add a title!");
     }
   }
 
@@ -57,6 +65,7 @@ function AddMovie(props) {
           onChange={(e) => {setRating(e.target.value)}}
         />
       </label>
+      <p>{message}</p>
       <input type="submit" value="Add" className="alex_button" />
     </form>
   );
