@@ -1,7 +1,6 @@
 import { API } from 'aws-amplify';
 import React, { useState } from 'react';
 import './Row.css';
-import { FaMinusSquare } from "react-icons/fa";
 
 function Row(props) {
   const {id, title, rating, genre, authState} = props;
@@ -23,8 +22,8 @@ function Row(props) {
       <td className="number">{rating}</td>
       {authState === "signedin" ?
         <td>
-          <button onClick={deleteMovie} className="delete_movie">
-            <FaMinusSquare className="delete_icon" />
+          <button onClick={deleteMovie} className="delete_movie alex_button">
+            X
           </button>
         </td>
       : null}
