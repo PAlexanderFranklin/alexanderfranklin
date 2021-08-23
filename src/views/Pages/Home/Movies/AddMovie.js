@@ -29,6 +29,7 @@ function AddMovie(props) {
 
   return (
     <form className="AddMovie" onSubmit={onSubmit}>
+      <h3>Add a Movie to the Database</h3>
       <label>
         Title:
         <input
@@ -56,7 +57,7 @@ function AddMovie(props) {
           onChange={(e) => {setRating(e.target.value)}}
         />
       </label>
-      <input type="submit" value="Add" />
+      <input type="submit" value="Add" className="alex_button" />
     </form>
   );
 }

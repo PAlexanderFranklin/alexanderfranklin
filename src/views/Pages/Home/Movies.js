@@ -43,7 +43,7 @@ function Movies() {
       {authState === AuthState.SignedIn && user ? (
         <div>
             <div>Hello, {user.username}</div>
-            <AmplifySignOut />
+            <div className="alex_button sign_out"><AmplifySignOut /></div>
             <AddMovie movieData={movieData} setMovieData={setMovieData} />
         </div>
       ) : (

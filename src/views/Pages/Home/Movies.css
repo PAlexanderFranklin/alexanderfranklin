@@ -6,6 +6,10 @@
     font-size: 1.2rem;
 }
 
+.sign_out {
+    padding: 0.5rem;
+}
+
 amplify-authenticator {
     --container-height: 0vh;
 }
