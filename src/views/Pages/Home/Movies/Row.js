@@ -24,7 +24,7 @@ function Row(props) {
       {authState === "signedin" ?
         <td>
           <button onClick={deleteMovie} className="delete_movie">
-            <FaMinusSquare className="icon delete_icon" />
+            <FaMinusSquare className="delete_icon" />
           </button>
         </td>
       : null}

@@ -43,8 +43,7 @@ amplify-authenticator {
 }
 
 .movie_table tbody tr{
-    color: black;
-    background-color: white;
+    background-color: var(--background-color);
     border-bottom: 1px solid lightgray;
 }
 

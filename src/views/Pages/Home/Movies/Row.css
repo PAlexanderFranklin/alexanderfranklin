@@ -3,8 +3,13 @@
     border: none;
     height: 1.5rem;
     width: 2rem;
+    color: var(--secondary-background-color);
 }
 
-.dark_mode .delete_icon {
-    color: #856679;
+.delete_movie:active {
+    color: var(--active-button-background-color);
+}
+
+.delete_icon {
+    font-size: 1.5rem;
 }
