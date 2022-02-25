@@ -29,7 +29,7 @@ function Movies(props) {
 
   return (
     <div className="Movies bubble">
-      <h2>Movie Database</h2>
+      <h2>DynamoDB Demonstration</h2>
       <p>
         The following table is a database demonstration
         using AWS API gateway, Lambda, and DynamoDB coupled
@@ -41,7 +41,7 @@ function Movies(props) {
       {authState === AuthState.SignedIn && user ? (
         <div className="signed_in">
             <p>You are signed in as {user.username}</p>
-            <div className="alex_button sign_out"><AmplifySignOut /></div>
+            <AmplifySignOut />
             <AddMovie movieData={movieData} setMovieData={setMovieData} />
         </div>
       ) : (

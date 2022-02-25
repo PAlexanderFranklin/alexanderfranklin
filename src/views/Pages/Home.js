@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Movies from './Home/Movies';
-import { MdMailOutline, MdPhoneIphone } from "react-icons/md";
+import { MdMailOutline } from "react-icons/md";
 
 function Home(props) {
   const {authState, user} = props;
@@ -10,23 +10,24 @@ function Home(props) {
       <div className="Home bubble">
         <h2>I'm Alexander Franklin</h2>
         <p>
-          I'm a hobbyist programmer looking to grow my skills into a career.
+          I am a general purpose programmer.
+          In addition to making React websites, I also make Python scripts
+          to automate tasks and make peoples lives easier. For me, Programming
+          is more about the logic than about the particular language I am working in.
         </p>
         <p>
-          I can build websites, like the one you're looking at. I am extremely
-          interested in Python development; I love to automate various tasks with it.
-          I like to play games that are about programming.
+          I am also a data analyst. I learned Excel and SQL on my own, and
+          then I took a data analytics certificate course from Google. During
+          the course, I learned more about SQL and spreadsheets, and I learned
+          to program in R. I also learned about collecting, storing, cleaning,
+          analyzing, visualizing, and presenting data.
         </p>
         <p>
-          Read more about this website on the projects page.
+          To contact me, send me an email at the following address:
         </p>
-      </div>
-      <div className="Contact bubble">
-        <h2>How to contact me</h2>
-        <div>
-          <p><MdMailOutline className="icon"/> PAlexanderFranklin@gmail.com </p>
-          <MdPhoneIphone className="icon"/> <span className="number">509-930-9363</span>
-        </div>
+        <p>
+          <MdMailOutline className="icon"/> PAlexanderFranklin@gmail.com
+        </p>
       </div>
       <Movies authState={authState} user={user}/>
     </div>
