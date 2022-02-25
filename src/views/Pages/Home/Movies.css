@@ -16,10 +16,6 @@
     align-items: center;
 }
 
-.sign_out {
-    padding: 0.5rem;
-}
-
 amplify-authenticator {
     --container-height: 0vh;
 }
