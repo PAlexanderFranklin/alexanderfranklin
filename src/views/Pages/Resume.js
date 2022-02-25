@@ -6,21 +6,18 @@ function Resume() {
     <div className="Resume bubble">
       <div>
         <h2 className="no_top_margin">Technical Skills</h2>
-        Languages: Javascript, HTML<span className="number">5</span>, CSS, PHP, Python, Lua, Applescript, C++. <br/>
-        Frameworks and Technologies: React, Git Version Control, AWS(Amplify, Cognito, DynamoDB), Node.js, Solar2D
+        <p>
+          Languages: SQL, Javascript (ES6), HTML<span className="number">5</span>, CSS, Python, R<br/>
+        </p>
+        <p>
+          Frameworks and Technologies: React, Git Version Control, AWS(Amplify, Cognito, DynamoDB), Jupyter Notebook, Node.js, Skynet
+        </p>
       </div>
       <div>
-        <h2>Work Experience</h2>
+        <h2>Experience</h2>
         Contracting <span className="date">July <span className="number">2020</span>-Sep <span className="number">2020</span></span> <br/>
         <ul>
-          {/*<li><span className="bullet_small">Javascript</span></li>
-          <li><span className="bullet_small">PHP</span></li>*/}
           <li><span className="bullet_small">Lua</span></li>
-        </ul>
-        <hr/>
-        Harvest Homes <span className="date">Sep <span className="number">2018</span>-Sep <span className="number">2020</span></span> <br/>
-        <ul>
-          <li><span className="bullet_small">Maintenance</span></li>
         </ul>
       </div>
       <div>
@@ -35,6 +32,12 @@ function Resume() {
           <li><span className="bullet_small">Credits: <span className="number">45</span></span></li>
           <li><span className="bullet_small">GPA: <span className="number">4.0</span></span></li>
         </ul>
+        <hr/>
+        Home School Diploma
+        <span className="date">
+          April <span className="number">2020</span>
+        </span>
+        <br/>
       </div>
     </div>
   );

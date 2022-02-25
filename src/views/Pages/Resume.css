@@ -19,11 +19,12 @@
 
 .Resume h2 {
     font-size: 2rem;
+    margin: 1rem 0rem 0.75rem 0rem;
 }
 
 .Resume hr {
     border: none;
-    height: 0.08rem;
+    height: 0.07rem;
     background: var(--color);
 }
 
