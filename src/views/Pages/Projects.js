@@ -76,7 +76,7 @@ function Projects() {
         draggable="false"
         target="_blank"
         rel="noopener noreferrer">
-          VISIT MY GITHUB
+          Visit My Github
       </a>
       {projectArray}
     </div>
