@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Projects.css';
 import Project from './Projects/Project';
 
@@ -19,6 +19,9 @@ function Projects() {
 
   projectArray.push(
     <Project title="Gravity Rotation Simulator">
+      <p>
+        Desktop Only.
+      </p>
       I made this using scratch, a visual block language. It uses its own coordinate system,
       and decides when and where to render objects to the scratch system. It has velocity, acceleration, and
       basic air resistance. It also has basic collision detection. <hr/>
