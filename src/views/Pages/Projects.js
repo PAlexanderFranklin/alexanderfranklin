@@ -5,24 +5,6 @@ import Project from './Projects/Project';
 function Projects() {
   let projectArray = [];
 
-  //This builds the bar display
-  const [bars, setBars] = useState(1);
-  if (bars < 0) {
-    setBars(0);
-  }
-  if (bars > 6) {
-    setBars(6);
-  }
-  let barArray = [];
-  for (let i = 1; i < 7; i++) {
-    let active = "active_bar";
-    if (i > bars) {
-      active = "";
-    }
-    barArray.push(<button onClick={() => setBars(i)} className={"bar " + active} style={{height: i + "em"}} />)
-  }
-  //End of bar display builder
-
   projectArray.push(
     <Project title="alexanderfranklin.net">
       The website you are on was
@@ -31,12 +13,6 @@ function Projects() {
       with the UI of multi page applications,
       and the useState react hook as well as 
       css variables for the sitewide dark mode button.
-      The following demonstrates state management:
-      <div className="bar_display">
-        <button onClick={() => setBars(bars - 1)} className="arrow_button"><h1>{'<'}</h1></button>
-        {barArray /*bar display */}
-        <button onClick={() => setBars(bars + 1)} className="arrow_button"><h1>{'>'}</h1></button>
-      </div>
     </Project>
   );
 
